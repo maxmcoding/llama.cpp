@@ -46,7 +46,7 @@ For example, to build the `ggml-rpc-server` with support for CUDA accelerators:
 ```bash
 mkdir build-rpc-cuda
 cd build-rpc-cuda
-cmake .. -DGGML_CUDA=ON -DGGML_RPC=ON
+cmake .. -DGGML_CUDA=ON -DGGML_RPC=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_FLAGS="-ccbin /usr/bin/g++-13"
 cmake --build . --config Release
 ```
 

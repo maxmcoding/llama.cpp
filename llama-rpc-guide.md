@@ -36,7 +36,8 @@ sudo ./bc250memcfg UMA_SIZE 10240
 sudo reboot
 
 
-sudo dnf install -y git cmake gcc-c++ vulkan-loader-devel mesa-vulkan-drivers vulkan-tools glslc glslang 
+sudo dnf install -y git cmake gcc-c++ vulkan-loader-devel mesa-vulkan-drivers vulkan-tools glslc glslang  spirv-headers-devel
+
 
 
 git clone https://github.com/ggml-org/llama.cpp.git
